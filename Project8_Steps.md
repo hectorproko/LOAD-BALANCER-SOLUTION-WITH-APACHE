@@ -75,11 +75,11 @@ To verify that our configuration works we access the **LB** from a browswer usin
 
 We should see a Red Hat default page since the Load Balancer (Ubuntu Machine) is redirecting the traffic to the Web Servers which are using Read Hat
 
-link here
+![Markdown Logo](https://raw.githubusercontent.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE/main/images/site.png)
 
-To make sure both servers are receiving **HTTP GET requests** from the **Load Balancer** we check the server's log file for new recrods.
+To make sure both servers are receiving **HTTP GET requests** from the **Load Balancer** we check the server's log file for new records.
 
-Note: In [**Project 7**](https://github.com/hectorproko/Devops-Tooling-Website-Solution/blob/main/Project7_Step.md#prepare-nfs-server) we mounted **/var/log/httpd/** from Web Servers to the **/mnt/logs** on NFS server. For this test we unmount it to make sure that each Web Server has its own log directory.  
+**Note**: In [**Project 7**](https://github.com/hectorproko/Devops-Tooling-Website-Solution/blob/main/Project7_Step.md#prepare-nfs-server) we mounted **/var/log/httpd/** from Web Servers to the **/mnt/logs** on NFS server. For this test we unmount it to make sure that each Web Server has its own log directory.  
 
 Now I'll log in to each Web Server using **SSH** and run the following command which displays the logs live
 ``` bash 
@@ -88,9 +88,7 @@ sudo tail -f /var/log/httpd/access_log
 
 The following terminals shows both logs side by side as I refresh page on the browswer
 
-link
-
-
+![Markdown Logo](https://raw.githubusercontent.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE/main/images/lbgetrequest.png)
 
 
 
