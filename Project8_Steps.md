@@ -86,7 +86,7 @@ Now I'll log in to each Web Server using **SSH** and run the following command w
 sudo tail -f /var/log/httpd/access_log
 ```
 
-The following terminals shows both logs side by side as I refresh page on the browswer
+The following terminals shows both logs side by side as I refresh page on the browser
 
 ![Markdown Logo](https://raw.githubusercontent.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE/main/images/lbgetrequest.png)
 
